@@ -1,0 +1,22 @@
+.main-nav{
+    float: right;
+    list-style: none;  
+	
+}
+.main-nav li{
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 05px;
+    margin-right: 10px;
+	color: black;
+}
+.main-nav li a:visited,.main-nav li a:link{
+    text-decoration: none;
+   text-transform: uppercase;
+    color: #BF55EC;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px; 
+}
+.main-nav li a:active,.main-nav li a:hover{
+    border-bottom: 2px solid #e67e22;
+}

@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    font-family: 'lato',sans-serif,'arial';
+    font-size:20px;
+    font-weight: 300;
+    color: #555;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+.main-heading{
+   top: 50%;
+    width: 1140px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+h1,h2,
+h3{
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+     word-spacing: 4px;
+    font-size: 240%; 
+    color: #BF55EC;
+}
+h2{
+    word-spacing: 2px;
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    content: " ";
+width: 100px;
+    background-color:#BF55EC  ;
+    margin: 15px auto;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.btn,input[type=submit]{
+    display: inline;
+    padding: 05px 10px;
+    border-style: solid;;
+    text-decoration: none;
+    color: #fff;
+     background-color: #e67e22;
+    border-radius: 200px;
+    border-color:#e67e22;
+    transition:0.5s;
+}
+.btn-show{
+   margin-left: 20px;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover{
+font-size:19px;
+    background-color:white;
+    color:#e67e22;
+    border: 1px solid white;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin: 10px 20px;
+}
+.logo-black{
+    display: none; 
+}
+.main-nav{
+    float: right;
+    list-style: none;  
+}
+.main-nav li{
+    margin-left: 40px;
+    display: inline-block;
+    margin-top: 45px;
+    margin-right: 10px;
+}
+.main-nav li a:visited,.main-nav li a:link{
+    text-decoration: none;
+   text-transform: uppercase;
+    color: #fff;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px; 
+}
+.main-nav li a:active,.main-nav li a:hover{
+    border-bottom: 2px solid #e67e22;
+}
+/*-----------------------*/
+/*mobile navi-------------*/
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+}
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+/*-----------------------*/
+/*sticky navi-------------*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.98);
+    z-index: 9999;
+    box-shadow: 0 2px 2px #efefef;
+}
+.sticky .main-nav {margin-top: 18px;}
+.sticky .main-nav li a:visited,
+.sticky .main-nav li a:link{
+    color: #555;
+    padding: 10px 0;
+}
+.sticky .main-nav li{
+    margin-top: 0;
+}
+.sticky .logo{display: none;}
+.sticky .logo-black{display:block;
+ height: 50px;
+    width: auto;
+    float: left;
+    margin:5px 5px 5px 15px;}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.section-features{
+    padding: 80px 0;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+}
+.boxs p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.icon-big{
+  color: #BF55EC;
+    font-size: 400%;
+    text-align: left;
+}
+.section-meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform:scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;
+}
+
+.meal-photo img:hover{
+    transform:scale(1.03);
+    opacity: 1;
+}
+.section-steps{
+    padding: 60px;
+}
+.step-box:first-child{
+    text-align: right;
+}
+.step-box:last-child{
+   padding-left: 3%;
+    width: 45%;
+    margin-top: 90px;
+}
+.app-screen{
+    width: 40%;
+}
+.work-step{
+    margin-bottom: 50px; 
+}
+.work-step:last-of-type{
+    margin-bottom: 100px;
+}
+.work-step div{
+    color:  #BF55EC;
+    display: inline-block;
+    border: 2px solid #BF55EC;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size:150%;
+        padding: 2px;
+    float: left;
+    margin-right: 25px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin:10px; 
+}
+.section-steps{
+    margin-top: 40px;
+}
+/*-------------------------------*/
+/*cities section -----------------*/
+/*---------------------------------*/
+.section-cities{
+    padding: 60px;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.cities-icon i,.plan-box i{
+    display: inline-block;
+    font-size: 120%;
+    width: 30px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 10px;
+    color: #BF55EC;
+}
+/*-------------------------------*/
+/*links-------- -----------------*/
+/*---------------------------------*/
+.city-features a:link,.city-features a:active{
+    color: #BF55EC;
+    text-decoration: none;
+    border-bottom: 1px solid #BF55EC;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+.city-features a:hover,.city-features a:active{
+    color: #555;
+     border-bottom: 1px solid transparent;
+}
+/*-------------------------------*/
+/*sectio-testimonials-------- -----------------*/
+/*---------------------------------*/
+.section-testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+    margin-top: 20px;
+}
+.section-testimonials h2{
+    margin-top: 20px;
+    color:#BF55EC;
+}
+blockquote{
+    font-style: italic;
+    padding: 2.5%;
+    line-height: 145%;
+    position: relative;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/*-------------------------------*/
+/*sectio-signup-------- -----------------*/
+/*---------------------------------*/
+.plan-box li{
+    list-style: none;
+    padding: 5px 0;
+    
+}
+.section-signup{
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: none;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #BF55EC;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+/*-------------------------------*/
+/*form-------- -----------------*/
+/*---------------------------------*/
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],input[type=email],select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+*:focus{outline:none};
+/*-------------------------------*/
+/*animations-------- -----------------*/
+/*---------------------------------*/
+.js--wp-1,.js--wp-4,
+.js--wp-3{
+    opacity: 0;
+    animation-duration: 1s;
+}
+.js--wp-1.animated,
+.js--wp-3.animated,
+.js--wp-4.animated{
+    opacity: 1;
+}
+.js--wp-2{
+    animation-duration: 2s;
+}
+
+

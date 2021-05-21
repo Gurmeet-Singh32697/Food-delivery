@@ -1,0 +1,65 @@
+.bg{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/03022012figure_a.gif");
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+ background-repeat: no-repeat;
+/* background-size: cover; */
+}
+ .horizontalline::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+.horizontalline{
+	color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.content-sigin{
+	padding-top: 10vh;
+}
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/*
+.icons{
+	  border: 1px solid #3B5998;
+	color: #3B5998;
+  padding: 5px;
+	background-color: white;
+  border-radius: 65px;
+
+	
+}
+*/
+.restaurantname a:link,.restaurantname a:visited{
+    text-decoration: none;
+   text-transform: uppercase;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px; 
+}
+.restaurantname a:active,.restaurantname a:hover{
+    border-bottom: 2px solid #e67e22;
+}
+
+.FoodShala a:link,.FoodShala a:visited{
+    text-decoration: none;
+   text-transform: uppercase;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px; 
+}
+.FoodShala a:active,.FoodShala a:hover{
+    border-bottom: 2px solid #e67e22;
+}
+
+
+
+
+
